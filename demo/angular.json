@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "projects": {
+    "common-components": "libs/common-components",
+    "lib1": "libs/shared/components",
+    "myapp": "apps/myapp",
+    "myapp-e2e": "apps/myapp-e2e",
+    "tailwind-preset": "libs/tailwind-preset"
+  }
+}

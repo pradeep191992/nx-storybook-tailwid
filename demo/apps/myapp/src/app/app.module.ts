@@ -1,3 +1,4 @@
+import { CommonComponentsModule } from '../../../../libs/common-components/src/lib/common-components.module';
 import { SharedComponentsModule } from './../../../../libs/shared/components/src/lib/shared-components.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,7 +12,8 @@ import { ButtonComponentModule } from 'libs/shared/components/src/lib/button/but
   imports: [
     BrowserModule,
     SharedComponentsModule,
-    ButtonComponentModule
+    ButtonComponentModule,
+    CommonComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
