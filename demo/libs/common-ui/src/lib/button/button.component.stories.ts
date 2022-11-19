@@ -11,9 +11,12 @@ export default {
   ],
 } as Meta<ButtonComponent>;
 
-const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
-  props: args,
-  // template: `<demo-button>${this.label}</demo-button>`
+const Template: Story<ButtonComponent & { label: string }> = ({
+  label,
+  ...props
+}) => ({
+  props,
+  template: `<demo-button>${label}</demo-button>`,
 });
 
 
