@@ -2,11 +2,11 @@
 .card {
   @apply h-full flex flex-col p-lg shadow-md hover:shadow-lg;
 
-  // background-color: theme('colors.secondary.light');
+  // background-color: theme('colors.primary');
 }
 
 .card-title {
-  @apply text-lg font-bold;
+  @apply text-16 font-bold;
 
   padding-bottom: theme('spacing.md');
 }
@@ -15,5 +15,5 @@
   @apply mb-xl flex-1;
 }
 .default-btn{
-  @apply py-sm px-md bg-primary-dark hover:bg-primary text-white flex self-end;
+  @apply py-sm px-md bg-primary hover:bg-primary-dark text-white flex self-end;
 }
