@@ -164,13 +164,8 @@ module.exports = {
         },
       },
     },
-    spacing: {
-      sm: '0.5rem',
-      md: '1rem',
-      lg: '1.5rem',
-      xl: '2rem',
-    },
-    extends: {
+
+    extend: {
       // backdrop Filter Blur
       backdropBlur: {
         '13': '13px',
@@ -231,7 +226,7 @@ module.exports = {
     },
   },
   plugins: [
-    function({ addComponents, theme }) {
+    function({ addComponents, addUtilities, theme }) {
       const buttons = {
         '.slb-btn': {
           'display': 'inline-block',
@@ -382,6 +377,34 @@ module.exports = {
         }
       };
       addComponents(dropdownBtn);
+
+      addUtilities({
+        '.glass-border': {
+          '&:after': {
+            'content': "''",
+            'width': '100%',
+            'height': '100%',
+            'position': 'absolute',
+            'top': '0',
+            'left': '0',
+            'padding': '1px',
+            'z-index': '-1',
+            'background-image': 'linear-gradient(102.09deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 29.17%, rgba(255, 255, 255, 0) 74.88%, rgba(255, 255, 255, 0.7) 100%)',
+            '-webkit-mask':  'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+            '-webkit-mask-composite': 'xor',
+            'mask-composite': 'exclude',
+            // adding Radius only for ipad and desktop
+            '@media (min-width: 768px)': {
+              'border-radius': '8px'
+            }
+          }
+        },
+        // Glass Effect
+        '.glass-effect': {
+          'background': 'linear-gradient(85.1deg, rgba(179, 179, 179, 0.15) 0%, rgba(255, 255, 255, 0.0375) 100%)',
+          'backdrop-filter': 'blur(100px)',
+        }
+      })
     }
   ],
 };

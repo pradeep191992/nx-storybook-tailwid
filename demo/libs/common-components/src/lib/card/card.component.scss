@@ -1,19 +1,18 @@
 /* card.component.css */
 .card {
-  @apply h-full flex flex-col p-lg shadow-md hover:shadow-lg;
+  @apply h-full flex flex-col p-8 shadow-md hover:shadow-lg;
 
   // background-color: theme('colors.primary');
 }
 
 .card-title {
-  @apply text-16 font-bold;
+  @apply text-16 font-bold m-4;
 
-  padding-bottom: theme('spacing.md');
 }
 
 .card-content {
-  @apply mb-xl flex-1;
+  @apply mb-8 flex-1;
 }
 .default-btn{
-  @apply py-sm px-md bg-primary hover:bg-primary-dark text-white flex self-end;
+  @apply py-2 px-4 bg-primary hover:bg-primary-dark text-white flex self-end;
 }
