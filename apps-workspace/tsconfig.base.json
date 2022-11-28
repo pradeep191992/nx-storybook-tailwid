@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@apps-workspace/shared-apps/storybook": [
+        "libs/shared-apps/storybook/src/index.ts"
+      ],
+      "@apps-workspace/shared-apps/ui/header": [
+        "libs/shared-apps/ui/header/src/index.ts"
+      ],
+      "@apps-workspace/shared-apps/ui/order-card": [
+        "libs/shared-apps/ui/order-card/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

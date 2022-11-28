@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared-apps/ui/order-card/src",
+  "prefix": "apps-workspace",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared-apps/ui/order-card"],
+      "options": {
+        "jestConfig": "libs/shared-apps/ui/order-card/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared-apps/ui/order-card/**/*.ts",
+          "libs/shared-apps/ui/order-card/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:shared-apps", "type:ui"]
+}
