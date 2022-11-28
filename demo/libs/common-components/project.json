@@ -57,6 +57,7 @@
         "outputDir": "dist/storybook/common-components",
         "configDir": "libs/common-components/.storybook",
         "browserTarget": "common-components:build-storybook",
+        "styles": ["libs/common-components/src/style.scss"],
         "compodoc": false
       },
       "configurations": {

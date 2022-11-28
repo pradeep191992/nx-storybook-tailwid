@@ -1,10 +1,10 @@
 <!-- card.component.html -->
-<div class="card">
-  <div class="card-title">{{ title }}</div>
-  <p class="card-content">
+<div class="card bg-slb-orange-100 h-full flex flex-col p-8 shadow-md hover:shadow-lg">
+  <div class="card-title text-16 font-bold m-4">{{ title }}</div>
+  <p class="card-content mb-8 flex-1">
     {{ para }}
   </p>
-  <a class="default-btn {{btnStyle}}"
+  <a class="default-btn {{btnStyle}} py-2 px-4 bg-primary hover:bg-primary-dark text-white flex self-end"
     [href]="link" target="_blank" rel="noopener noreferrer">
     Know More
   </a>
