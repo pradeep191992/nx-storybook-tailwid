@@ -1,0 +1,6 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared-apps/tailwind-preset",
+  "targets": {},
+  "tags": ["scope:shared-apps","type:ui"]
+}
