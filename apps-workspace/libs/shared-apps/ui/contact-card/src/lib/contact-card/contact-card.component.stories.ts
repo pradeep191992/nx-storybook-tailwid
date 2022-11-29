@@ -18,14 +18,6 @@ const Template: Story<ContactCardComponent> = (args: ContactCardComponent) => ({
   props: args,
 });
 
-// decorators: [
-//   moduleMetadata({
-//     declarations: [SvgIconComponent],
-//   }),
-//   componentWrapperDecorator((story: any) => `<div style="padding:20px;height: 100vh; background-color: #0F2D60;">${story}</div>`),
-// ],
-
-
 
 export const AppCard1 = Template.bind({});
 export const AppCard2 = Template.bind({});
@@ -36,7 +28,7 @@ AppCard1.args = {
   userName: '',
   fullName: 'User name 1',
   role: 'Frontend Developer',
-  classNames: 'bg-red-500 w-8 h-8 mr-2.5 text-sm',
+  classNames: 'bg-slb-orange-400 w-8 h-8 mr-2.5 text-14',
   para: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.',
 }
 AppCard2.args = {
@@ -44,7 +36,7 @@ AppCard2.args = {
   userName: '',
   fullName: 'User name 2',
   role: 'Angular Developer',
-  classNames: 'w-8 h-8 mr-2.5 text-sm',
+  classNames: 'w-8 h-8 mr-2.5 text-14',
   para: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.',
 }
 AppCard3.args = {
@@ -52,6 +44,6 @@ AppCard3.args = {
   userName: 'User name 3',
   fullName: 'User name 3',
   role: 'React Developer',
-  classNames: 'w-8 h-8 mr-2.5 text-sm',
+  classNames: 'w-8 h-8 mr-2.5 text-14',
   para: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.',
 }

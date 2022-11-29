@@ -27,7 +27,6 @@ export class UserInitialsComponent implements OnInit {
     }
   }
   getCleanFullName(): Array<string> | undefined {
-    debugger
     return this.userName?.trim()?.split(' ');
   }
 }

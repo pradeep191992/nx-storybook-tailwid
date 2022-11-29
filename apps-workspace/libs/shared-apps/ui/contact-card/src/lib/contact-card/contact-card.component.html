@@ -1,9 +1,9 @@
-<div class="flex items-center cursor-pointer" id="view_order_crew_contact">
-  <apps-workspace-user-initials [userName]="userName" [imagePath]="imagePath" [classNames]="'w-8 h-8 mr-2.5 text-sm'">
+<div class="flex-ic cursor-pointer" id="view_order_crew_contact">
+  <apps-workspace-user-initials [userName]="userName" [imagePath]="imagePath" [classNames]="classNames">
   </apps-workspace-user-initials>
   <div>
     <h5 id="view_order_crew_contact_name" class="text-sm not-italic font-normal text-black m-0"
       [innerHTML]="fullName | titlecase"></h5>
-    <p id="view_order_crew_contact_role" class="text-[9px] text-gray-500" [innerHTML]="role"></p>
+    <p id="view_order_crew_contact_role" class="text-[9px] text-slb-gray-500" [innerHTML]="role"></p>
   </div>
 </div>
