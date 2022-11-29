@@ -18,6 +18,9 @@
       "@apps-workspace/shared-apps/storybook": [
         "libs/shared-apps/storybook/src/index.ts"
       ],
+      "@apps-workspace/shared-apps/ui/contact-card": [
+        "libs/shared-apps/ui/contact-card/src/index.ts"
+      ],
       "@apps-workspace/shared-apps/ui/header": [
         "libs/shared-apps/ui/header/src/index.ts"
       ],
