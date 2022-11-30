@@ -30,27 +30,27 @@ export const SizeXXLarge = Template.bind({});
 SizeSmall.args = {
   imagePath: '',
   userName: 'Pradeep Saini',
-  classNames: 'w-8 h-8 text-14 bg-slb-gray-300'
+  classNames: 'w-8 h-8 text-14 border-slb-gray-400 bg-slb-gray-300'
 }
 SizeMedium.args = {
   imagePath: '',
   userName: 'Pradeep Saini',
-  classNames: 'w-14 h-14 text-19 bg-slb-gray-300'
+  classNames: 'w-14 h-14 text-19 border-slb-gray-400 bg-slb-gray-300'
 }
 SizeLarge.args = {
   imagePath: '',
   userName: 'Pradeep Saini',
-  classNames: 'w-20 h-20 text-[30px] bg-slb-gray-300'
+  classNames: 'w-20 h-20 text-[30px] border-slb-gray-400 bg-slb-gray-300'
 }
 SizeXLarge.args = {
   imagePath: '',
   userName: 'Pradeep Saini',
-  classNames: 'w-32 h-32 text-[50px] bg-slb-gray-300'
+  classNames: 'w-32 h-32 text-[50px] border-slb-gray-400 bg-slb-gray-300'
 }
 SizeXXLarge.args = {
   imagePath: '',
   userName: 'Pradeep Saini',
-  classNames: 'w-40 h-40 text-[80px] bg-slb-gray-300'
+  classNames: 'w-40 h-40 text-[80px] border-slb-gray-400 bg-slb-gray-300'
 }
 
 UserInitial.args = {

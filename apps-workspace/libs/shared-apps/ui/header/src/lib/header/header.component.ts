@@ -10,7 +10,12 @@ export class HeaderComponent implements OnInit {
   @Input() para?: string;
   @Input() link?: string;
   @Input() slbLogo!: string;
+  @Input() notificationCount!: number;
+
+  countClass = '';
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.countClass = this.notificationCount ? 'px-2 py-1 rounded-2xl gap-1' : 'w-8 h-8 rounded-full';
+  }
 }

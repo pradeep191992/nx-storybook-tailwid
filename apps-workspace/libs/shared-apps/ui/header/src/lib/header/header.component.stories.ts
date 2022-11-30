@@ -1,14 +1,16 @@
+import { moduleMetadata, Story, Meta } from '@storybook/angular';
+
+import { SharedAppsUiSubSharedModule } from './../../../../sub-shared/src/lib/shared-apps-ui-sub-shared.module';
 import { HeaderComponent } from './header.component';
 
-import { moduleMetadata, Story, Meta } from '@storybook/angular';
-// import * Image from './../../../../../assets/slb-icons';
 
 export default {
   title: 'App Header',
   component: HeaderComponent,
   decorators: [
     moduleMetadata({
-      imports: [],
+      declarations: [],
+      imports: [SharedAppsUiSubSharedModule],
     })
   ],
 } as Meta<HeaderComponent>;
@@ -17,22 +19,12 @@ const Template: Story<HeaderComponent> = (args: HeaderComponent) => ({
   props: args,
 });
 
-// const Template: Story<HeaderComponent & { label: string }> = ({
-//   label,
-//   title,
-//   para,
-//   ...props
-// }) => ({
-//   props,
-//   template: `<HeaderComponent label="${label}">${label}</HeaderComponent>`,
-// });
-
 export const App1Header = Template.bind({});
 export const App2Header = Template.bind({});
 export const App3Header = Template.bind({});
 
 App1Header.args = {
-  slbLogo: './slb-logo.svg',
+  slbLogo: '/assets/slb-icons/slb-logo.svg',
   title: 'Angular',
   para: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.',
   link: 'https://angular.io'

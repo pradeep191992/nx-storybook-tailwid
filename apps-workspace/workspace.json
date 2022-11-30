@@ -8,6 +8,7 @@
     "shared-apps-tailwind-preset": "libs/shared-apps/tailwind-preset",
     "shared-apps-ui-contact-card": "libs/shared-apps/ui/contact-card",
     "shared-apps-ui-header": "libs/shared-apps/ui/header",
-    "shared-apps-ui-order-card": "libs/shared-apps/ui/order-card"
+    "shared-apps-ui-order-card": "libs/shared-apps/ui/order-card",
+    "shared-apps-ui-sub-shared": "libs/shared-apps/ui/sub-shared"
   }
 }

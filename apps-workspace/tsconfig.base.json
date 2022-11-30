@@ -26,6 +26,9 @@
       ],
       "@apps-workspace/shared-apps/ui/order-card": [
         "libs/shared-apps/ui/order-card/src/index.ts"
+      ],
+      "@apps-workspace/shared-apps/ui/sub-shared": [
+        "libs/shared-apps/ui/sub-shared/src/index.ts"
       ]
     }
   },

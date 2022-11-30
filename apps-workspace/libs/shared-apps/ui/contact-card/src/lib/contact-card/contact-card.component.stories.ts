@@ -1,4 +1,3 @@
-import { UserInitialsComponent } from './../user-initials/user-initials.component';
 
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { ContactCardComponent } from './contact-card.component';
@@ -8,7 +7,7 @@ export default {
   component: ContactCardComponent,
   decorators: [
     moduleMetadata({
-      declarations: [UserInitialsComponent],
+      // declarations: [UserInitialsComponent],
       imports: [],
     })
   ],

@@ -27,12 +27,17 @@
 </nav> -->
 
 <nav class="bg-primary px-6 py-3 w-full flex-ic-jb">
-  <figure>
+  <figure class="flex-ic gap-3">
+    <apps-workspace-svg-icon [iconHashTag]="'back_btn_icon'" 
+      class="icon text-24 leading-[1] relative top-[-1px]"></apps-workspace-svg-icon>
     <img [src]="slbLogo" alt="">
-    <span class="text-white text-27">Logo</span>
   </figure>
-  <div class="text-white flex-ic-jb gap-4">
-    <span>Notification</span>
-    <span>Profile</span>
+  <div class="text-white flex-ic-jb gap-3">
+    <div class="border-solid border-white flex-center {{countClass}}">
+      <apps-workspace-svg-icon [iconHashTag]="'bell_icon'" 
+        class="icon text-24 leading-[1] relative top-[-1px]"></apps-workspace-svg-icon>
+        <span class="text-12">{{notificationCount}}</span>
+    </div>
+    <apps-workspace-user-initials userName="Pradeep Saini" classNames="border-solid w-8 h-8"></apps-workspace-user-initials>
   </div>
 </nav>
