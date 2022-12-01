@@ -1,6 +1,6 @@
-import { SharedAppsUiContactCardModule } from './../../../../libs/shared-apps/ui/contact-card/src/lib/shared-apps-ui-contact-card.module';
-import { SharedAppsUiOrderCardModule } from './../../../../libs/shared-apps/ui/order-card/src/lib/shared-apps-ui-order-card.module';
-import { SharedAppsUiHeaderModule } from './../../../../libs/shared-apps/ui/header/src/lib/shared-apps-ui-header.module';
+import { SharedAppsUiOrderCardModule } from '@apps-workspace/shared-apps/ui/order-card';
+import { SharedAppsUiHeaderModule } from '@apps-workspace/shared-apps/ui/header';
+import { SharedAppsUiContactCardModule } from '@apps-workspace/shared-apps/ui/contact-card';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,9 +12,10 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
     BrowserModule,
+    SharedAppsUiContactCardModule,
     SharedAppsUiHeaderModule,
     SharedAppsUiOrderCardModule,
-    SharedAppsUiContactCardModule,
+    
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
   ],
   providers: [],

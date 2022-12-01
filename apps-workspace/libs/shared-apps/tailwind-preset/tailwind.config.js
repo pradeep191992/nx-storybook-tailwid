@@ -18,6 +18,7 @@ module.exports = {
       '16': ['16px', '21px'],
       '19': ['19px', '24px'],
       '21': ['21px', '26px'],
+      '24': ['24px', '28px'],
       '27': ['27px', '33px'],
       '33': ['33px', '40px'],
       '36': ['36px', '40px'],
@@ -34,7 +35,7 @@ module.exports = {
       'primary-dark': '#1E1464',
       'aqua-blue': '#00D2DC',
       'frost-blue-1': '#6E8CC8',
-      'frost-blue-1': '#6E8CC8',
+      'frost-blue-2': '#AFBEE1',
       white: '#fff',
 
       'slb':{

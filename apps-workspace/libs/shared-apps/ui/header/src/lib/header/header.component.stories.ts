@@ -19,25 +19,26 @@ const Template: Story<HeaderComponent> = (args: HeaderComponent) => ({
   props: args,
 });
 
-export const App1Header = Template.bind({});
-export const App2Header = Template.bind({});
-export const App3Header = Template.bind({});
+export const HeaderOption1 = Template.bind({});
+export const HeaderOption2 = Template.bind({});
+export const HeaderOption3 = Template.bind({});
 
-App1Header.args = {
+HeaderOption1.args = {
   slbLogo: '/assets/slb-icons/slb-logo.svg',
-  title: 'Angular',
-  para: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.',
-  link: 'https://angular.io'
+  userName: 'Pradeep Saini',
+  backButton: false,
+  showNotification: true,
 }
-App2Header.args = {
+HeaderOption2.args = {
   slbLogo: '/assets/slb-icons/slb-logo.svg',
-  title: 'Tailwind CSS',
-  para: 'Tailwind CSS is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.',
-  link: 'https://tailwindcss.com'
+  userName: 'Test User',
+  backButton: true,
+  showNotification: false,
 }
-App3Header.args = {
+HeaderOption3.args = {
   slbLogo: '/assets/slb-icons/slb-logo.svg',
-  title: 'Nx',
-  para: 'Nx is a smart, fast and extensible build system with first class monorepo support and powerful integrations.',
-  link: 'https://nx.dev'
+  userName: 'John Deo',
+  notificationCount: 22,
+  backButton: false,
+  showNotification: true,
 }

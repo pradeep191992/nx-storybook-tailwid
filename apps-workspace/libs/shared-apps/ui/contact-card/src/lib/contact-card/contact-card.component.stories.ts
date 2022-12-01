@@ -1,3 +1,5 @@
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
+import { SharedAppsUiSubSharedModule } from 'libs/shared-apps/ui/sub-shared/src';
 
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { ContactCardComponent } from './contact-card.component';
@@ -7,8 +9,8 @@ export default {
   component: ContactCardComponent,
   decorators: [
     moduleMetadata({
-      // declarations: [UserInitialsComponent],
-      imports: [],
+      declarations: [],
+      imports: [SharedAppsUiSubSharedModule],
     })
   ],
 } as Meta<ContactCardComponent>;
@@ -18,31 +20,70 @@ const Template: Story<ContactCardComponent> = (args: ContactCardComponent) => ({
 });
 
 
-export const AppCard1 = Template.bind({});
-export const AppCard2 = Template.bind({});
-export const AppCard3 = Template.bind({});
+export const Contact1 = Template.bind({});
+export const Contact2 = Template.bind({});
+export const Contact3 = Template.bind({});
+export const Contact4 = Template.bind({});
+export const Contact5 = Template.bind({});
+export const Contact6 = Template.bind({});
 
-AppCard1.args = {
+Contact1.args = {
   imagePath: '',
-  userName: '',
-  fullName: 'User name 1',
-  role: 'Frontend Developer',
-  classNames: 'bg-slb-orange-400 w-8 h-8 mr-2.5 text-14',
-  para: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.',
+  fullName: 'First and Last Name',
+  role: 'Occupation Title',
+  classNames: 'w-10 h-10 mr-2.5 text-16',
+  activeCall: false,
+  inTransit: false,
+  isCallAble: true,
+  isAdmin: false,
 }
-AppCard2.args = {
+Contact2.args = {
   imagePath: 'https://cdn.tailgrids.com/1.0/assets/images/cards/card-01/image-01.jpg',
-  userName: '',
-  fullName: 'User name 2',
-  role: 'Angular Developer',
-  classNames: 'w-8 h-8 mr-2.5 text-14',
-  para: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.',
+  fullName: 'First and Last Name',
+  role: 'Occupation Title',
+  classNames: 'w-10 h-10 mr-2.5 text-16',
+  activeCall: true,
+  inTransit: false,
+  isCallAble: true,
+  isAdmin: false,
 }
-AppCard3.args = {
+Contact3.args = {
   imagePath: '',
-  userName: 'User name 3',
-  fullName: 'User name 3',
-  role: 'React Developer',
-  classNames: 'w-8 h-8 mr-2.5 text-14',
-  para: 'Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.',
+  fullName: 'First and Last Name',
+  role: 'Occupation Title',
+  classNames: 'w-10 h-10 mr-2.5 text-16',
+  activeCall: false,
+  inTransit: true,
+  isCallAble: true,
+  isAdmin: false,
+}
+Contact4.args = {
+  imagePath: '',
+  fullName: 'First and Last Name',
+  role: 'Occupation Title',
+  classNames: 'w-10 h-10 mr-2.5 text-16',
+  activeCall: false,
+  inTransit: false,
+  isCallAble: false,
+  isAdmin: false,
+}
+Contact5.args = {
+  imagePath: '',
+  fullName: 'First and Last Name',
+  role: 'Occupation Title',
+  classNames: 'w-10 h-10 mr-2.5 text-16',
+  activeCall: false,
+  inTransit: false,
+  isCallAble: false,
+  isAdmin: true,
+}
+Contact6.args = {
+  imagePath: '',
+  fullName: 'First and Last Name',
+  role: 'Occupation Title',
+  classNames: 'w-10 h-10 mr-2.5 text-16',
+  activeCall: false,
+  inTransit: true,
+  isCallAble: false,
+  isAdmin: false,
 }

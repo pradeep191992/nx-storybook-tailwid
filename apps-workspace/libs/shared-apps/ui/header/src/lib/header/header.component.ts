@@ -6,11 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @Input() title?: string;
-  @Input() para?: string;
-  @Input() link?: string;
+  @Input() userName!: string;
+  @Input() backButton!: boolean;
   @Input() slbLogo!: string;
-  @Input() notificationCount!: number;
+  @Input() notificationCount!: number | undefined;
+  @Input() showNotification!: boolean;
 
   countClass = '';
   constructor() {}
