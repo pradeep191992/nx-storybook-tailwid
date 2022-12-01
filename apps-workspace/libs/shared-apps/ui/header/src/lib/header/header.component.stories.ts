@@ -1,6 +1,6 @@
+// eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
+import { SharedAppsUiSubSharedModule } from 'libs/shared-apps/ui/sub-shared/src';
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-
-import { SharedAppsUiSubSharedModule } from './../../../../sub-shared/src/lib/shared-apps-ui-sub-shared.module';
 import { HeaderComponent } from './header.component';
 
 

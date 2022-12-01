@@ -12,13 +12,14 @@
 
   <div class="text-white flex-ic-jb gap-3">
     <!-- Notification Icon and Count -->
-    <div class="border-solid border-white flex-center {{countClass}}" *ngIf="showNotification">
+    <div class="border-solid border-white flex-center cursor-pointer {{countClass}}" 
+      *ngIf="showNotification" (click)="openNotificationPanel()">
       <apps-workspace-svg-icon [iconHashTag]="'bell_icon'" 
-        class="icon text-24 leading-[1] relative top-[-1px]"></apps-workspace-svg-icon>
+        class="icon text-19 leading-[1] relative top-[-1px]"></apps-workspace-svg-icon>
       <span *ngIf="notificationCount" class="text-12">{{notificationCount}}</span>
     </div>
 
     <!-- User Profile Icon or Initials -->
-    <apps-workspace-user-initials [userName]="userName" classNames="border-solid w-8 h-8"></apps-workspace-user-initials>
+    <apps-workspace-user-initials (click)="openProfileDropdown()" [userName]="userName" class="cursor-pointer" classNames="border-solid w-8 h-8 text-14"></apps-workspace-user-initials>
   </div>
 </nav>
