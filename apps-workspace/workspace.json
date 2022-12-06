@@ -6,6 +6,7 @@
     "myapp-1-e2e": "apps/myapp-1-e2e",
     "shared-apps-storybook": "libs/shared-apps/storybook",
     "shared-apps-tailwind-preset": "libs/shared-apps/tailwind-preset",
+    "shared-apps-ui-attachment-card": "libs/shared-apps/ui/attachment-card",
     "shared-apps-ui-contact-card": "libs/shared-apps/ui/contact-card",
     "shared-apps-ui-header": "libs/shared-apps/ui/header",
     "shared-apps-ui-order-card": "libs/shared-apps/ui/order-card",

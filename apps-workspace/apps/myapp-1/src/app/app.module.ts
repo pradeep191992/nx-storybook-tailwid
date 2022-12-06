@@ -7,6 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { RouterModule } from '@angular/router';
+import { SharedAppsUiSubSharedModule } from '@apps-workspace/shared-apps/ui/sub-shared';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
@@ -15,6 +16,7 @@ import { RouterModule } from '@angular/router';
     SharedAppsUiContactCardModule,
     SharedAppsUiHeaderModule,
     SharedAppsUiOrderCardModule,
+    SharedAppsUiSubSharedModule,
     
     RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
   ],

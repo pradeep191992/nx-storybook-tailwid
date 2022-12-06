@@ -36,7 +36,7 @@ OrderStatus.args = {
   },
   orderStatusLabel: 'order-card',
   showDateLabel: false,
-  spacingClass: 'gap-1 md:gap-1.5'
+  spacingClass: 'max-w-[72px] md:max-w-[342px] gap-[2px] md:gap-1.5'
 }
 
 // @Input() label!: string | undefined;

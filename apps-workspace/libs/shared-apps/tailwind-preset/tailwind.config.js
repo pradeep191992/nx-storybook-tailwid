@@ -10,19 +10,24 @@ module.exports = {
   theme: {
     // Font Size
     fontSize: {
+      '10': ['10px', '12px'],
       '11': ['11px', '13px'],
       '12': ['12px', '16px'],
       '13': ['13px', '14px'],
       '14': ['14px', '19px'],
       '15': ['15px', '20px'],
       '16': ['16px', '21px'],
+      '18': ['18px', '22px'],
       '19': ['19px', '24px'],
       '21': ['21px', '26px'],
       '24': ['24px', '28px'],
       '27': ['27px', '33px'],
+      '28': ['28px', '33px'],
+      '32': ['32px', '36px'],
       '33': ['33px', '40px'],
       '36': ['36px', '40px'],
       '40': ['40px', '47px'],
+      '44': ['44px', '48px'],
       '48': ['48px', '56px'],
       '56': ['56px', '62px'],
       '60': ['60px', '67px'],
@@ -146,26 +151,43 @@ module.exports = {
         // Custom White Color with Opacity (#FFF)
         'white': {
           90: 'rgba(255, 255, 255, 0.9)',
+          85: 'rgba(255, 255, 255, 0.85)',
           80: 'rgba(255, 255, 255, 0.8)',
+          75: 'rgba(255, 255, 255, 0.75)',
           70: 'rgba(255, 255, 255, 0.7)',
+          65: 'rgba(255, 255, 255, 0.65)',
           60: 'rgba(255, 255, 255, 0.6)',
+          55: 'rgba(255, 255, 255, 0.55)',
           50: 'rgba(255, 255, 255, 0.5)',
+          45: 'rgba(255, 255, 255, 0.45)',
           40: 'rgba(255, 255, 255, 0.4)',
+          35: 'rgba(255, 255, 255, 0.35)',
           30: 'rgba(255, 255, 255, 0.3)',
+          25: 'rgba(255, 255, 255, 0.25)',
           20: 'rgba(255, 255, 255, 0.2)',
+          15: 'rgba(255, 255, 255, 0.15)',
           10: 'rgba(255, 255, 255, 0.1)',
         },        
-        // SLB Black Color with Transparancy (#000)
+        // SLB Black Color with Opacity (#000)
         'black': {
-          '10': 'rgba(0, 0, 0, 0.1)',
-          '20': 'rgba(0, 0, 0, 0.2)',
-          '30': 'rgba(0, 0, 0, 0.3)',
-          '40': 'rgba(0, 0, 0, 0.4)',
-          '50': 'rgba(0, 0, 0, 0.5)',
-          '60': 'rgba(0, 0, 0, 0.6)',
-          '70': 'rgba(0, 0, 0, 0.7)',
-          '80': 'rgba(0, 0, 0, 0.8)',
-          '90': 'rgba(0, 0, 0, 0.9)',
+          100: 'rgba(0, 0, 0, 1)',
+          90: 'rgba(0, 0, 0, 0.9)',
+          85: 'rgba(0, 0, 0, 0.85)',
+          80: 'rgba(0, 0, 0, 0.8)',
+          75: 'rgba(0, 0, 0, 0.75)',
+          70: 'rgba(0, 0, 0, 0.7)',
+          65: 'rgba(0, 0, 0, 0.65)',
+          60: 'rgba(0, 0, 0, 0.6)',
+          55: 'rgba(0, 0, 0, 0.55)',
+          50: 'rgba(0, 0, 0, 0.5)',
+          45: 'rgba(0, 0, 0, 0.45)',
+          40: 'rgba(0, 0, 0, 0.4)',
+          35: 'rgba(0, 0, 0, 0.35)',
+          30: 'rgba(0, 0, 0, 0.3)',
+          25: 'rgba(0, 0, 0, 0.25)',
+          20: 'rgba(0, 0, 0, 0.2)',
+          15: 'rgba(0, 0, 0, 0.15)',
+          10: 'rgba(0, 0, 0, 0.1)',
         },
       },
     },
@@ -198,7 +220,8 @@ module.exports = {
       },
       // SLB Bg image Color Linear Gradient, 45 Angle, Opacity- 50,0,0,50
       backgroundImage: {
-        'linear-glass85': 'linear-gradient(89.52deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.255) 100%)'
+        'linear-glass85': 'linear-gradient(89.52deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.255) 100%)',
+        'progress-bar': 'radial-gradient(104.06% 162.5% at 49.85% 181.25%, rgba(0, 210, 220, 0.6) 0%, rgba(0, 210, 220, 0) 100%), #FFFFFF'
       },
       // SLB Shadow Effects
       boxShadow: {
@@ -299,16 +322,10 @@ module.exports = {
             "display": "none",
           }
         },
-        ".nav-border": {
-          "border-bottom": "1px solid #CECECE"
-        },
         ".scrolling-touch": {
           "-webkit-overflow-scrolling": "touch"
         },
-        ".slb-hidden": {
-          "display": "none"
-        },
-        ".border-solid": {
+        ".solid-border": {
           "border": "1px solid"
         }
       };
@@ -317,44 +334,47 @@ module.exports = {
         // action Status Progress
         '.default-progress': {
           'display': 'block',
-          'background': 'rgba(26, 26, 26, 0.2)',
-          'height': '6px',
+          'background': 'rgba(175, 190, 225, 0.5)',
+          'height': '4px',
           "width": '100%',
             '&:first-child': {
-              'border-radius': '4px 0 0 4px',
+              'border-radius': '1px 0 0 1px',
             },
             '&:last-child': {
-              'border-radius': '0 4px 4px 0',
+              'border-radius': '0 1px 1px 0',
             },
-            // adding Responsiveness
             '@media (min-width: 1024px)': {
-              'height': '8px',
+              'height': '6px',
             }
+        },
+        
+        '.default-progress1': {
+          'background': 'rgba(255, 255, 255, 0.4)',
         },
         // action Status Progress complete state
         '.progress-complete': {
-          'background': `${theme('colors.slb.blue.300')}`,
+          'background': `${theme('colors.frost-blue-1')}`,
         },
+        '.progress-complete1': {
+          'background-color': 'rgba(255, 255, 255, 0.6)',
+        },
+
         // action Status Progress active state
         '.progress-active': {
-          'height': '8px',
-          'background': `${theme('colors.slb.blue.600')}`,
-          // adding Responsiveness
+          'height': '6px',
+          'border-radius': '1px',
+          'background': `${theme('colors.primary')}`,
           '@media (min-width: 1024px)': {
-            'height': '12px',
-            'min-width': '87px'
+            'height': '8px'
           }
         },
-
         // action Status Progress complete state
-        '.progress-complete-white': {
-          'background-color': `${theme('colors.white')}`,
+        '.progress-active1': {
+          'background': `${theme('colors.white')}`,
         },
-
         // action Status Progress complete state
-        '.progress-active-blue': {
-          'height': '12px',
-          'background': "radial-gradient(104.06% 162.5% at 49.85% 181.25%, rgba(0, 210, 220, 0.6) 0%, rgba(0, 210, 220, 0) 100%), #FFFFFF",
+        '.progress-active2': {
+          'background': `${theme('backgroundImage.progress-bar')}`,
         },
       };
       addUtilities(actionStatusProgress, ["responsive"]);

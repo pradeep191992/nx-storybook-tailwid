@@ -113,15 +113,18 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/SharedAppsUiSubSharedModule.html" data-type="entity-link" >SharedAppsUiSubSharedModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-SharedAppsUiSubSharedModule-e325e9b11955ad6be025c31e50eede586f317fb73ab56ff1d52e35fe7520f476746ea83c4e2c6e361b69e71caacda973cf7128fade3b2b0b56759c708032c7d6"' : 'data-target="#xs-components-links-module-SharedAppsUiSubSharedModule-e325e9b11955ad6be025c31e50eede586f317fb73ab56ff1d52e35fe7520f476746ea83c4e2c6e361b69e71caacda973cf7128fade3b2b0b56759c708032c7d6"' }>
+                                            'data-target="#components-links-module-SharedAppsUiSubSharedModule-8fe3ac31a491f91a7d2054385013b582b9cef6e87c868fe312bb3b7481d524e55c198cdeb0eb65e3cc182fa57680e84c2cb5faa3e7df63a18c85a919c903678b"' : 'data-target="#xs-components-links-module-SharedAppsUiSubSharedModule-8fe3ac31a491f91a7d2054385013b582b9cef6e87c868fe312bb3b7481d524e55c198cdeb0eb65e3cc182fa57680e84c2cb5faa3e7df63a18c85a919c903678b"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-SharedAppsUiSubSharedModule-e325e9b11955ad6be025c31e50eede586f317fb73ab56ff1d52e35fe7520f476746ea83c4e2c6e361b69e71caacda973cf7128fade3b2b0b56759c708032c7d6"' :
-                                            'id="xs-components-links-module-SharedAppsUiSubSharedModule-e325e9b11955ad6be025c31e50eede586f317fb73ab56ff1d52e35fe7520f476746ea83c4e2c6e361b69e71caacda973cf7128fade3b2b0b56759c708032c7d6"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-SharedAppsUiSubSharedModule-8fe3ac31a491f91a7d2054385013b582b9cef6e87c868fe312bb3b7481d524e55c198cdeb0eb65e3cc182fa57680e84c2cb5faa3e7df63a18c85a919c903678b"' :
+                                            'id="xs-components-links-module-SharedAppsUiSubSharedModule-8fe3ac31a491f91a7d2054385013b582b9cef6e87c868fe312bb3b7481d524e55c198cdeb0eb65e3cc182fa57680e84c2cb5faa3e7df63a18c85a919c903678b"' }>
                                             <li class="link">
                                                 <a href="components/SkeletonComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >SkeletonComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/StatusTrackerComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >StatusTrackerComponent</a>
                                             </li>
                                             <li class="link">
                                                 <a href="components/SvgIconComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >SvgIconComponent</a>
@@ -134,6 +137,19 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                 </ul>
                 </li>
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#interfaces-links"' :
+                            'data-target="#xs-interfaces-links"' }>
+                            <span class="icon ion-md-information-circle-outline"></span>
+                            <span>Interfaces</span>
+                            <span class="icon ion-ios-arrow-down"></span>
+                        </div>
+                        <ul class="links collapse " ${ isNormalMode ? ' id="interfaces-links"' : 'id="xs-interfaces-links"' }>
+                            <li class="link">
+                                <a href="interfaces/TrackerInfo.html" data-type="entity-link" >TrackerInfo</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#miscellaneous-links"'
                             : 'data-target="#xs-miscellaneous-links"' }>
