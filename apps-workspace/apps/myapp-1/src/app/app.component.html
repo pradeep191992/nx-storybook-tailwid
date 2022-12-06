@@ -1,5 +1,38 @@
 
-<apps-workspace-header slbLogo="/assets/slb-icons/slb-logo.svg"></apps-workspace-header>
+<apps-workspace-header slbLogo="/assets/slb-icons/slb-logo.svg" [showNotification]="true" userName="John Deo"></apps-workspace-header>
+
+
+<section>
+  <h2>Status</h2>
+  <div>
+    <h4>expected time of arrival (ETA)</h4>
+    <p>9/12/22, 3:08am</p>
+  </div>
+  <div>
+    <h3>crew</h3>
+
+    <apps-workspace-contact-card class="w-full p-4" 
+      fullName="Aditio Tejowiyono" 
+      role="ESP Supervisor" 
+      classNames="w-10 h-10 mr-2.5 text-16"
+      [isCallAble]="false"
+      [inTransit]="true"></apps-workspace-contact-card>
+    
+    <apps-workspace-contact-card class="w-full p-4" 
+      fullName="Manuel Giovanni Mogollo..." 
+      role="ESP Crew" 
+      classNames="w-10 h-10 mr-2.5 text-16"
+      [isCallAble]="true"
+      [activeCall]="true"></apps-workspace-contact-card>
+  </div>
+  <div>
+    <h3>want to contact the crew?</h3>
+    <p>request a callback and they will reach out when they are available</p>
+    <button class="btn">Request Callback</button>
+  </div>
+</section>
+
+
 
 
 <!-- ====== Cards Section Start -->

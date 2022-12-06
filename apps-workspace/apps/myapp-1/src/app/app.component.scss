@@ -1,0 +1,13 @@
+section{
+  container-type: inline-size;
+}
+@container (inline-size > 400px) {
+  section h3{
+    background: red;
+  }
+}
+@container (inline-size > 800px) {
+  section h3{
+    background: green;
+  }
+}

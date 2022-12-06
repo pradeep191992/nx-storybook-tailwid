@@ -1,0 +1,31 @@
+<p>status-tracker works!</p>
+
+<div class="flex-center mb-2 tracker max-w-[342px] {{spacingClass}}">
+  <span class="default-progress {{responsiveClases}} progress-complete"></span>
+  <span class="default-progress {{responsiveClases}} progress-complete"></span>
+  <span class="default-progress {{responsiveClases}} progress-complete progress-active"></span>
+  <span class="default-progress {{responsiveClases}}"></span>
+  <span class="default-progress {{responsiveClases}}"></span>
+</div>
+
+
+
+
+
+
+
+<!-- <div class="flex-center mb-2 tracker" *ngIf="statusInfo?.statusArr?.length">
+  <span class="default-progress {{responsiveClases}} {{status}}" *ngFor="let status of statusInfo?.statusArr"></span>
+</div>
+<div class="flex-dc">
+  <p id="status-label" class="pending-text text-10r md:text-11r text-slb-gray-900 text-center whitespace-nowrap" [ngClass]="{'mb-1': statusDate, 'xsm:flex-col': pendingStatusInfo?.showPendingText , 'flex-col': pendingStatusInfo?.showWrappedReqAck }" *ngIf="label"
+    [innerHTML]="label">  </p>
+  <span id="status-label" class="pending-text text-10r md:text-11r text-slb-gray-900 text-center whitespace-nowrap" 
+    *ngIf="pendingStatusInfo?.showPendingText" [ngClass]="{'block': pendingStatusInfo?.showWrappedReqAck}"
+    [innerHTML]="'&nbsp;' + ('(Pending Reschedule)' | highlightSearch : querySearch)"></span>
+  <p id="status-date" *ngIf="showDateLabel" class="starting-label text-10r md:text-11r text-slb-gray-600 whitespace-nowrap">
+   <span class="track-status-label">{{orderStatusLabel}}:</span>
+   {{statusDate}}
+  </p>
+  <p id="status-date" *ngIf="statusInfo?.showDate" class="date-label text-10r md:text-11r text-slb-gray-600 flex-center whitespace-nowrap">{{statusDate}}</p>
+</div> -->

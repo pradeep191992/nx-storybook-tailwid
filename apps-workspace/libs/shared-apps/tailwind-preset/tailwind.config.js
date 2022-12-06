@@ -313,6 +313,51 @@ module.exports = {
         }
       };
       addUtilities(newUtilities, ["responsive"]);
+      const actionStatusProgress = {
+        // action Status Progress
+        '.default-progress': {
+          'display': 'block',
+          'background': 'rgba(26, 26, 26, 0.2)',
+          'height': '6px',
+          "width": '100%',
+            '&:first-child': {
+              'border-radius': '4px 0 0 4px',
+            },
+            '&:last-child': {
+              'border-radius': '0 4px 4px 0',
+            },
+            // adding Responsiveness
+            '@media (min-width: 1024px)': {
+              'height': '8px',
+            }
+        },
+        // action Status Progress complete state
+        '.progress-complete': {
+          'background': `${theme('colors.slb.blue.300')}`,
+        },
+        // action Status Progress active state
+        '.progress-active': {
+          'height': '8px',
+          'background': `${theme('colors.slb.blue.600')}`,
+          // adding Responsiveness
+          '@media (min-width: 1024px)': {
+            'height': '12px',
+            'min-width': '87px'
+          }
+        },
+
+        // action Status Progress complete state
+        '.progress-complete-white': {
+          'background-color': `${theme('colors.white')}`,
+        },
+
+        // action Status Progress complete state
+        '.progress-active-blue': {
+          'height': '12px',
+          'background': "radial-gradient(104.06% 162.5% at 49.85% 181.25%, rgba(0, 210, 220, 0.6) 0%, rgba(0, 210, 220, 0) 100%), #FFFFFF",
+        },
+      };
+      addUtilities(actionStatusProgress, ["responsive"]);
     }
   ],
 };
